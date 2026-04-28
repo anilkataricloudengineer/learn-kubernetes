@@ -64,7 +64,7 @@ spec:
   ingressClassName: nginx
   rules:
     - host: httpd-base.azdevopsb82.online
-    - http:
+      http:
         paths:
           - path: /
             pathType: Prefix
@@ -82,7 +82,7 @@ spec:
   ingressClassName: nginx
   rules:
     - host: nginx-base.azdevopsb82.online
-    - http:
+      http:
         paths:
           - path: /
             pathType: Prefix
