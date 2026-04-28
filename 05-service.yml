@@ -28,9 +28,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-np
+  name: nginx-lb
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     appName: nginx
     demoFor: ClusterIP
