@@ -37,7 +37,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: cm-demo-2
+  name: cm-demo-3
 spec:
   containers:
     - name: debug
