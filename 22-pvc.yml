@@ -4,3 +4,8 @@ metadata:
   name: demo-pvc
 spec:
   storageClassName: "managed"
+  capacity:
+    storage: 1Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
