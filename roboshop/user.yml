@@ -4,8 +4,8 @@ kind: ConfigMap
 metadata:
   name: user
 data:
-  "MONGO": "true",
-  "MONGO_URL": "mongodb://mongodb-dev.anilcloudengineer.online:27017/users",
+  "MONGO": "true"
+  "MONGO_URL": "mongodb://mongodb-dev.anilcloudengineer.online:27017/users"
   "REDIS_URL": "redis://redis-dev.anilcloudengineer.online:6379"
 ---
 apiVersion: apps/v1
@@ -36,7 +36,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: shipping
+  name: user
 spec:
   selector:
     app: user
