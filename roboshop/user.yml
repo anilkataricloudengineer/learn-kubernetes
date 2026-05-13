@@ -28,12 +28,12 @@ spec:
         - name: user
           image: public.ecr.aws/w8x4g9h7/roboshop-v3/user
           ports:
-            containerPort: 8080
+            - containerPort: 8080
           envFrom:
             - configMapRef:
                 name: user
 ---
-apiVersion: apps/v1
+apiVersion: v1
 kind: Service
 metadata:
   name: shipping

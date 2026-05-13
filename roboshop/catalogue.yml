@@ -31,12 +31,12 @@ spec:
         - name: catalogue
           image: public.ecr.aws/w8x4g9h7/roboshop-v3/catalogue
           ports:
-            containerPort: 8080
+            - containerPort: 8080
           envFrom:
             - configMapRef:
                 name: catalogue
 ---
-apiVersion: batch/v1
+apiVersion: v1
 kind: Service
 metadata:
   name: catalogue
