@@ -40,6 +40,7 @@ spec:
             - configMapRef:
                 name: frontend
 ---
+apiVersion: apps/v1
 kind: Service
 metadata:
   name: frontend

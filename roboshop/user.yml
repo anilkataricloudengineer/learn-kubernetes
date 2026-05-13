@@ -33,6 +33,7 @@ spec:
             - configMapRef:
                 name: user
 ---
+apiVersion: apps/v1
 kind: Service
 metadata:
   name: shipping
