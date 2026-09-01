@@ -2,3 +2,7 @@ image: nginx
 
 debugPod:
   enabled: true
+
+favorite:
+  - drink: coke
+    food: fries
